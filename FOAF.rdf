@@ -822,12 +822,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/nick -->
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/nick"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/plan -->
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/plan">
