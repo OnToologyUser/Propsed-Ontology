@@ -35,6 +35,7 @@
 
     <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole">
         <inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
     </ObjectProperty>
     
@@ -44,6 +45,7 @@
 
     <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
     </ObjectProperty>
     
 
@@ -62,6 +64,8 @@
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#inhibitedBy">
         <inverseOf rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#inhibits"/>
+        <rdfs:domain rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Fundamental_Need"/>
+        <rdfs:range rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#InhibitingSatisfier"/>
     </ObjectProperty>
     
 
@@ -80,6 +84,7 @@
     <ObjectProperty rdf:about="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#neededByAgent">
         <inverseOf rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#agentHasNeed"/>
         <rdfs:domain rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Fundamental_Need"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
     </ObjectProperty>
     
 
@@ -87,6 +92,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#agentHasNeed -->
 
     <ObjectProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#agentHasNeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Fundamental_Need"/>
     </ObjectProperty>
     
@@ -96,6 +102,7 @@
 
     <ObjectProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#agentIsSatisfiedBy">
         <inverseOf rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#satisfierForAgent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Satisfier"/>
     </ObjectProperty>
     
@@ -183,6 +190,7 @@
 
     <ObjectProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#satisfierForAgent">
         <rdfs:domain rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Satisfier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
     </ObjectProperty>
     
 
@@ -220,6 +228,7 @@
     <!-- http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#hasSensor -->
 
     <DatatypeProperty rdf:about="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#hasSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
@@ -228,6 +237,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasAge -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </DatatypeProperty>
     
@@ -245,6 +255,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasFamily -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasFamily">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
@@ -253,6 +264,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasHusband -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasHusband">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
@@ -261,6 +273,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasRole -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </DatatypeProperty>
     
@@ -269,6 +282,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasSatisficationRating -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasSatisficationRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </DatatypeProperty>
     
@@ -277,6 +291,7 @@
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#hasWife -->
 
     <DatatypeProperty rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#hasWife">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
@@ -312,6 +327,12 @@
     <Class rdf:about="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#AffSub">
         <rdfs:subClassOf rdf:resource="htttp://www.shawndexter.com/semantics/FHNOntology#Affection"/>
     </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent -->
+
+    <Class rdf:about="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology#Agent"/>
     
 
 
@@ -427,8 +448,7 @@
 
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#Being -->
 
-    <NamedIndividual rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Being">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <Class rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Being">
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -454,7 +474,7 @@
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-    </NamedIndividual>
+    </Class>
     
 
 
@@ -490,8 +510,7 @@
 
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#Doing -->
 
-    <NamedIndividual rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Doing">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <Class rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Doing">
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -517,7 +536,7 @@
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-    </NamedIndividual>
+    </Class>
     
 
 
@@ -604,8 +623,7 @@
 
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#Having -->
 
-    <NamedIndividual rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Having">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <Class rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Having">
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -631,7 +649,7 @@
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-    </NamedIndividual>
+    </Class>
     
 
 
@@ -697,8 +715,7 @@
 
     <!-- htttp://www.shawndexter.com/semantics/FHNOntology#Interacting -->
 
-    <NamedIndividual rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Interacting">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <Class rdf:about="htttp://www.shawndexter.com/semantics/FHNOntology#Interacting">
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -724,7 +741,7 @@
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-    </NamedIndividual>
+    </Class>
     
 
 
