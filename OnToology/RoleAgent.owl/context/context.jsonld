@@ -6,29 +6,17 @@
     "Object" : {
       "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"
     },
-    "isClassifiedBy" : {
-      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
-      "@type" : "@id"
-    },
-    "hasRole" : {
-      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole",
-      "@type" : "@id"
-    },
     "extractedFrom" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "Concept" : {
-      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"
+    "Agent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"
     },
     "Role" : {
       "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
-    },
-    "isRoleOf" : {
-      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf",
-      "@type" : "@id"
     },
     "relatedCPs" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs"
@@ -39,12 +27,11 @@
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
-    "classifies" : {
-      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
-      "@type" : "@id"
-    },
     "coversRequirements" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"
+    },
+    "isCloneOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isCloneOf"
     },
     "hasConsequences" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences"
